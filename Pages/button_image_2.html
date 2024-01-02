@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Button Example</title>
+  <style>
+    .image-container {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <a href="https://www.example.com" target="_blank">
+    <img id="myImage" src="image.jpg" alt="Click Me">
+  </a>
+  
+  <button id="secondPageButton">Go to Second Page</button>
+
+  <script>
+    // Get the button element
+    const button = document.getElementById('secondPageButton');
+
+    // Define the event handler for the button click
+    function goToSecondPage() {
+      window.location.href = "second-page.html";
+    }
+
+    // Attach the event handler to the button click event
+    button.addEventListener('click', goToSecondPage);
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Button Example</title>
+  <style>
+    .image-container {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <button id="changeButton">Click Me</button>
+  <div class="image-container">
+    <img id="myImage" src="../Images/pip.png" alt="Initial Image">
+  </div>
+
+  <script>
+    // Get the button and image elements
+    const button = document.getElementById('changeButton');
+    const image = document.getElementById('myImage');
+
+    // Define the event handler for the button click
+    function changeImage() {
+      image.src = "../Images/telphon.png";
+      image.alt = "New Image";
+    }
+
+    // Attach the event handler to the button click event
+    button.addEventListener('click', changeImage);
+  </script>
+</body>
+</html>
